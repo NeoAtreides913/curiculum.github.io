@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="eS">
+    <head>
+        <title>Curriculum</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/css_nav.css" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+        <script defer src="index.js"></script>
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+       
+       
+    </head>
+    <body>
+        <div>
+            <header>
+                <img src="imagenes/rgc.png" alt="">
+            </header>
+        </div>
+        <div class="centrar">
+            <img class="redondo"   src="imagenes/foto_perfil.jpg " alt="">
+
+        </div>
+
+        <div> 
+            <nav class="centrar">
+               
+                <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="#sobremi" class="nav-menu-link nav-link">Sobre Mì</a></li>
+                <li class="nav-menu-item"><a href="#datos" class="nav-menu-link nav-link">Datos</a></li>
+                <li class="nav-menu-item"><a href="#estudios" class="nav-menu-link nav-link">Estudios</a></li>
+                
+                </ul>
+            </nav>
+        </div>
+
+        <div id= "sobremi" class="mi">
+             
+                Apasionado por la informatica<br>
+                el diseño web
+            
+                
+            
+        </div>
+
+        </div>
+        <div id="datos" class=" mi">
+                Celular: 11-3156-6790
+                <br>
+                Dirección: San Martin 227 – capital Federal.
+                <br>
+                D.N.I: 111.234.345 b
+                <br>
+                Nacionalidad: Australiano.
+                <br>
+                Fecha de nac: 09/08/1991
+
+                
+        </div>
+        <div id= "estudios" class="mi ">
+             
+            Terciarios<br>
+            Carrera: SISTEMAS<br>
+            Título: Analista de Sistemas<br>
+            Desde: 2007				Hasta: 2010<br>
+            
+            Secundario<br>
+            Carrera: Operador PC<br>
+            Título: Computacion<br>
+            
+        </div>
+        <footer>
+            Trabajo Practico 2023 - Argentina
+        </footer>
+
+
+
+
+        <button class="btn-scrolltop" id="btn_scrolltop">
+            <i class="fas fa-chevron-up"></i>
+          </button>
+          <script>
+            const btn_scrolltop = document.getElementById("btn_scrolltop")
+              btn_scrolltop.addEventListener('click', () => {
+                window.scrollTo(0, 0)
+              })
+        
+            window.onscroll = () => {
+              add_btn_scrolltop()
+            }
+        
+            const add_btn_scrolltop = () => {
+              if (window.scrollY < 300) {
+                btn_scrolltop.classList.remove("btn-scrolltop-on")
+              } else {
+                btn_scrolltop.classList.add("btn-scrolltop-on")
+              }
+            }
+        
+          </script>
+        
+        
+    </body>
+</html>
